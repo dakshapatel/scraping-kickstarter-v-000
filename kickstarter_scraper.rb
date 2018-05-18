@@ -36,5 +36,5 @@ end
 projects
 end
 
-project.css("p.bbcard_blurb").text
-Kickstarter.new.create_project_hash
+#project.css("p.bbcard_blurb").text
+#Kickstarter.new.create_project_hash
