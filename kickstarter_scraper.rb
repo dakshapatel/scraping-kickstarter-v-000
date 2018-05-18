@@ -1,6 +1,7 @@
 # require libraries/modules here
 # projects: kickstarter.css("li.project.grid_4")
 # title: project.css("h2.bbcard_name strong a").text
+# image link: project.css("div.project-thumbnail a img").attribute("src").value
 
 #The variable_name = _ syntax used in Pry will assign the variable name to the return value of whatever was executed above.
 
