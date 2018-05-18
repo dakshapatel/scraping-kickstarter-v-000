@@ -4,6 +4,7 @@
 # image link: project.css("div.project-thumbnail a img").attribute("src").value
 # description: project.css("p.bbcard_blurb").text
 # location: project.css("span.location-name").text
+# percent_funded: project.css("li.first.funded strong").text.gsub("%","").to_i
 
 #The variable_name = _ syntax used in Pry will assign the variable name to the return value of whatever was executed above.
 
