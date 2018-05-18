@@ -12,7 +12,7 @@
 require 'nokogiri'
 require 'pry'
 
-class Kickstarter
+#class Kickstarter
 
 def create_project_hash
   html = File.read('fixtures/kickstarter.html')
@@ -35,6 +35,6 @@ end
 #return the projects hash
 projects
 end
-end 
+#end
 #project.css("p.bbcard_blurb").text
 #Kickstarter.new.create_project_hash
