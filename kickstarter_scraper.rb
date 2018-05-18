@@ -6,6 +6,7 @@
 
 require 'nokogiri'
 require 'pry'
+
 class Kickstarter
 
 def create_project_hash
@@ -15,4 +16,4 @@ def create_project_hash
   binding.pry
 end
 
-end 
+end
