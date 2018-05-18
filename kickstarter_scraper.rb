@@ -23,6 +23,7 @@ def create_project_hash
   # and the value is another hash with each of our other data points as keys.
   kickstarter.css("li.project.grid_4").each do |project|
     title = project.css("h2.bbcard_name strong a").text
+    #converting the title into a symbol using the to_sym method.
     projects[title.to_sym] = {}
 end
 #return the projects hash
