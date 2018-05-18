@@ -19,9 +19,11 @@ def create_project_hash
   kickstarter = Nokogiri::HTML(html)
 
   projects = {}
-  # Iterate through the projects
+  # Iterate through the projects so that each project title is a key,
+  # and the value is another hash with each of our other data points as keys.
   kickstarter.css("li.project.grid_4").each do |project|
-    projects[project] = {}
+    title = project.css("h2.bbcard_name strong a").text
+    projects[title.to_sym] = {}
 end
 #return the projects hash
 projects
